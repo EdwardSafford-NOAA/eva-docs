@@ -22,7 +22,8 @@ jobs:
 
     # Update conda
     - name: Update conda
-      run: conda update -n base -c defaults --solver=classic conda-forge::conda-libmamba-solver conda-forge::libmamba conda-forge::libmambapy conda-forge::libarchive conda
+#      run: conda update -n base -c defaults --solver=classic conda-forge::conda-libmamba-solver conda-forge::libmamba conda-forge::libmambapy conda-forge::libarchive conda
+      run: conda install -n base conda-libmamba-solver --solver=classic
 
     # Install pip
     - name: Install pip
