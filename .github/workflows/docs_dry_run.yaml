@@ -17,7 +17,7 @@ jobs:
 
     # Update conda
     - name: Update conda
-      run: conda update -n base -c defaults conda
+      run: conda update -n base -c defaults --solver=classic conda
 
     # Install pip
     - name: Install pip
