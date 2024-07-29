@@ -34,8 +34,6 @@ jobs:
 
     # Install cartopy
     - name: Install cartopy
-#      run: conda install -c conda-forge --solver=classic conda-forge::conda-libmamba-solver conda-forge::libmamba conda-forge::libmambapy conda-forge::libarchive cartopy
-#      run: conda install -c conda-forge --solver=classic cartopy
       run: conda install -c conda-forge cartopy
 
     # Clone the eva-docs repository
