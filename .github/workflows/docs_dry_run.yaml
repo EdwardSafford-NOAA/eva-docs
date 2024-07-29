@@ -17,7 +17,7 @@ jobs:
 
     # Update conda
     - name: Update conda
-      run: conda update -n base -c defaults --solver=classic conda
+      run: conda update -n base -c defaults conda
 
     # Install pip
     - name: Install pip
@@ -29,7 +29,7 @@ jobs:
 
     # Install cartopy
     - name: Install cartopy
-      run: conda install -c conda-forge cartopy
+      run: conda install -c conda-forge --solver=classic cartopy
 
     # Clone the eva-docs repository
     - name: Clone eva-docs repo
