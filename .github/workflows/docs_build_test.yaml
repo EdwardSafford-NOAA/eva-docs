@@ -20,6 +20,7 @@ jobs:
       with:
         python-version: 3.9
 
+
     # Update conda
     - name: Update conda
       run: conda update -n base -c defaults conda 
